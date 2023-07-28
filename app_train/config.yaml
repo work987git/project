@@ -1,0 +1,18 @@
+# Training Config
+'processed_data_path': 'clinical_project-main/data'
+'model_name': emilyalsentzer/Bio_ClinicalBERT
+'model_save_dir': 'models/Bio_ClinicalBERT'
+'text_column': 'assessment_text'
+'max_length': 512
+'batch_size': 8
+'metric_name': 'f1'
+'learning_rate': 0.00002
+'num_train_epochs': 1
+'weight_decay': 0.01
+'threshold': 0.5
+
+# MLFlow config
+'project_name': Experiment_on_Bio_ClinicalBERT
+'mlflow_tracking_uri': postgresql+psycopg2://postgres:postgres@127.0.0.1:5432/postgres
+'mlflow_experiment_name': Experiment_on_Bio_ClinicalBERT
+'mlflow_artifact_uri': 
