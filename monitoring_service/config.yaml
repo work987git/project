@@ -1,4 +1,5 @@
 #Training_data_path
-
-'old_training_data_path': 'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_project-main\data'
-'training_data_history': 'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_project-main\data\training_data_history'
+#TODO Update path to 'data'
+'training_data_path': 'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project'
+'dvc_latest_version': '79_'
+'training_dvc': 'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project\training.csv.dvc'

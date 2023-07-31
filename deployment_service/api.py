@@ -25,7 +25,7 @@ import table_creation_logging
 from lime.lime_text import LimeTextExplainer
 
 print(sys.path)
-sys.path.append(r'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_project-main')
+sys.path.append(r'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project')
 from prediction_service import prediction_multi_label
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification

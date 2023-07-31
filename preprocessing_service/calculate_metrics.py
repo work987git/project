@@ -14,7 +14,7 @@ def calculate_metrics_multi_label(run_id, ground_truth, prediction, flag):
     
     
     with mlflow.start_run(run_id=run_id):
-        date = datetime.now().isoformat()
+        date = datetime.datetime.now().isoformat()
         tags = {
                 "tag_key": f"pred_on_{flag}_{run_id}_{str(date)}"
             }

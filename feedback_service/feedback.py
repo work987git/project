@@ -1,6 +1,6 @@
 import mlflow
 import sys
-sys.path.append(r'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_project-main')
+sys.path.append(r'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project')
 from deployment_service import table_creation_logging
 import ast
 import os
