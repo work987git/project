@@ -1,5 +1,5 @@
 # Training Config
-'processed_data_path': 'clinical_project-main/data'
+'processed_data_path': 'project/data'
 'model_name': emilyalsentzer/Bio_ClinicalBERT
 'model_save_dir': 'models/Bio_ClinicalBERT'
 'text_column': 'assessment_text'

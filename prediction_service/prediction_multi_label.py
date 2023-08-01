@@ -15,7 +15,7 @@ import pandas as pd
 class Multilabel(BaseModel):
     assessment_text: str
 
-def predict_service(run_id, data, model_info, stage):
+def predict_service(run_id, data, stage):
     
     request_id = str(uuid4())
 
@@ -78,12 +78,12 @@ def predict_service(run_id, data, model_info, stage):
 
     print('Predicted Probs------------------------',label_probs)
 
-    monitoring_data.log_data(
-        request_id, 
-        input_texts, 
-        preds_list, 
-        "logs", 
-        model_info, 
-        )
+    # monitoring_data.log_data(
+    #     request_id, 
+    #     input_texts, 
+    #     preds_list, 
+    #     "logs", 
+    #     model_info, 
+    #     )
     return predicted_labels_list, actual_labels_list, label_probs
 

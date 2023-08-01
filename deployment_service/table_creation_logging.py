@@ -76,7 +76,7 @@ def retrive_feedback(run_id):
     password="postgres"
     )
     conn.autocommit = True
-    sql = 'SELECT * FROM feedback WHERE "model_id" = %s'
+    sql = 'SELECT * FROM feedback WHERE "run_id" = %s'
     feeds = pd.read_sql(sql = sql, con=conn, params=(run_id,))
     return feeds
 

@@ -6,12 +6,12 @@
 # import mlflow
 
 
-# def initialize_dvc_if_not_initialized():
-#     if not os.path.exists('.dvc'):
-#         subprocess.run(['dvc', 'init'])
-#         print("DVC has been initialized.")
-#     else:
-#         print("DVC is already initialized.")
+def initialize_dvc_if_not_initialized():
+    if not os.path.exists('.dvc'):
+        subprocess.run(['dvc', 'init'])
+        print("DVC has been initialized.")
+    else:
+        print("DVC is already initialized.")
         
 # def dvc_add_file_or_directory(path):
 #     try:

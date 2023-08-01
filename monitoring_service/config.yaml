@@ -1,5 +1,5 @@
-#Training_data_path
-#TODO Update path to 'data'
-'training_data_path': 'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project'
-'dvc_latest_version': '79_'
-'training_dvc': 'C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project\training.csv.dvc'
+dvc_latest_version: training_31-07-2023_19-20-30
+training_data_path: C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project
+training_dvc: C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project\training.csv.dvc
+training_script_path : C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_project-main\app_train\train.py
+config_training_path : C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_project-main\app_train\config.yaml

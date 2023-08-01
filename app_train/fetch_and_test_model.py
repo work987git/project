@@ -38,7 +38,7 @@ def fetch(config_path: str, run_id: str, port: int):
     mlflow.set_tracking_uri("http://localhost:5000") # read from config
     run = mlflow.get_run(run_id)
     model_run_name = run.data.tags['mlflow.runName']
-    stage = 'Production' #'Staging'  read from config
+    stage = 'Staging'  #read from config
     experiment_id = run.info.experiment_id
     experiment_name = mlflow.get_experiment(experiment_id).name
     # load test dataset
