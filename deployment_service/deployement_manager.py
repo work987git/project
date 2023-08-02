@@ -23,8 +23,11 @@ class DeploymentManager:
     def __init__(self, config_file):
         self.deployments = []
 
-        with open(config_file, "r") as file:
-            configs = yaml.safe_load(file)
+        if isinstance(config_file, dict):
+            configs = [config_file]
+        else:
+            with open(config_file, "r") as file:
+                configs = yaml.safe_load(file)
 
         for config in configs:
             deployment = ModelDeployment(
@@ -52,7 +55,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--config_file", 
         type=str, 
-        default="deployment_config.yml", 
+        default=r"C:\Users\U1153226\Documents\pb_pivot2\mlflow\clinical_trial_repo\clinical_project-main\clinical_prj\project\deployment_service\config.yaml", 
         help="Path to the YAML configuration file")
     
     args = parser.parse_args()

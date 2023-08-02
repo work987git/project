@@ -81,7 +81,7 @@ def main(config_path: str):
     with mlflow.start_run(experiment_id=experiment_id):
         print("Artifact location: %s", mlflow.get_artifact_uri())
         print("Run %s" % mlflow.active_run().info.run_uuid)
-        
+        run_id = mlflow.active_run().info.run_uuid
         trainer = Trainer(
             model,
             args,
@@ -94,11 +94,14 @@ def main(config_path: str):
 
         trainer.train()
         trainer.evaluate()
+        profile_html_path = data_utils.create_and_log_profiling(config['processed_data_path'], run_id)
         # trainer.save_model(model_path)
         # mlflow.pytorch.save_model(model, model_path)
         mlflow.pytorch.log_model(trainer.model, "model")
 
         mlflow.log_artifacts(model_path, artifact_path="model")
+        
+        mlflow.log_artifact(profile_html_path, artifact_path="profiling_reports")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Training script")

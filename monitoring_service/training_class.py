@@ -17,13 +17,13 @@ class DataProcessor:
 
     def versioning_data(self, csv_file_path):
         try:
-            tag = self.config['dvc_latest_version'] 
-            git_checkout_command = ['git', 'checkout', tag]
-            subprocess.run(git_checkout_command, capture_output=True, text=True, check=True)
+            # tag = self.config['dvc_latest_version'] 
+            # git_checkout_command = ['git', 'checkout', tag]
+            # subprocess.run(git_checkout_command, capture_output=True, text=True, check=True)
 
-            # Pull the latest csv 
-            dvc_pull_command = ['dvc', 'pull', '--force']
-            subprocess.run(dvc_pull_command, capture_output=True, text=True, check=True)
+            # # Pull the latest csv 
+            # dvc_pull_command = ['dvc', 'pull', '--force']
+            # subprocess.run(dvc_pull_command, capture_output=True, text=True, check=True)
 
             path = self.config['training_data_path']
             path = os.path.join(path, "training.csv")
